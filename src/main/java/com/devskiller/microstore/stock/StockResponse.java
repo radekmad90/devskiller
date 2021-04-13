@@ -1,6 +1,6 @@
 package com.devskiller.microstore.stock;
 
-class StockResponse {
+public class StockResponse {
 
     private String orderId;
     private String status;
