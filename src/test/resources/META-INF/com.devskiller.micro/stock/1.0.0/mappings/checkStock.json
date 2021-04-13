@@ -1,0 +1,21 @@
+{
+  "id" : "3a8b10dc-4e05-48e7-8313-76845dabcfe9",
+  "request" : {
+    "url" : "/products/order1",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "matches" : "application/json"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"orderId\":\"order1\",\"status\":\"AVAILABLE\"}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "3a8b10dc-4e05-48e7-8313-76845dabcfe9"
+}
