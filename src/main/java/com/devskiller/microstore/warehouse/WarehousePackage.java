@@ -1,6 +1,6 @@
 package com.devskiller.microstore.warehouse;
 
-public class WarehousePayload {
+public class WarehousePackage {
     private String orderId;
     private String action;
 

@@ -18,10 +18,10 @@ public class WarehouseService {
 	}
 
 	public void sendPackage(String orderId) {
-		WarehousePayload payload = new WarehousePayload();
+		WarehousePackage payload = new WarehousePackage();
 		payload.setAction("SEND");
 		payload.setOrderId(orderId);
-		Message<WarehousePayload> message = MessageBuilder.withPayload(payload).setHeader("contentType", "application/json").build();
+		Message<WarehousePackage> message = MessageBuilder.withPayload(payload).setHeader("contentType", "application/json").build();
 		serviceSource.send(message);
 	}
 }
